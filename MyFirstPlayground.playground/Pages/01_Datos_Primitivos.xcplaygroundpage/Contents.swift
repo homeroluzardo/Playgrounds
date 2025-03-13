@@ -39,7 +39,6 @@ myName = "Pablo García"
 print("Hola, \(myName)!")
 print("Hola, \(myName.uppercased())")
 print("Hola, \(myName.count)")
-print("Hola, \(myName.first)")
 print("Hola, \(myName.first!)")
 print("Hola, \(myName.isEmpty)")
 print("Hola, \(myName.last!)")
