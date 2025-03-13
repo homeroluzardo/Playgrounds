@@ -8,7 +8,7 @@ var nombre: String? = nil
 nombre = "Juan"
 print(nombre ?? "No hay nombre")
 
-// IMPORTANTE:
+// IMPORTANTE: Da error en XCODE.
 // Any y AnyObject → Tipos genéricos (evitar su uso si es posible)
 //var datoX: Any = "Hola"
 //datoX = 10
