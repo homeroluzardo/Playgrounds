@@ -149,5 +149,15 @@ let producto = ["Laptop": 1200, "Celular": 800]
 let primerElemento = producto.first
 print(primerElemento ?? "Diccionario vacío")
 
+var myDictionaryInfo = ["name": "SwiftBeta", "webpage": "swiftbeta.com", "skills": "Swift"]
+myDictionaryInfo["skills"] = nil
+print(myDictionaryInfo)
+
+var countriesAndCapitals = ["España": "Madrid", "Francia": "París", "Italia": "Roma"]
+let keyExists = countriesAndCapitals["España"] != nil
+print("¿Existe la clave 'España'?", (keyExists ? "Sí" : "No"), "Su valor es: ", (countriesAndCapitals["España"] ?? "No encontrado"))
+
+
+
 
 //: [Next](@next)
