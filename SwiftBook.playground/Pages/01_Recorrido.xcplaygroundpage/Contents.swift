@@ -120,5 +120,38 @@ for numero in 1...20 {
 
 print("")
 
-// *** Quede en: Puedes usar if y let en conjunto para lidiar con valores
+// *** OPCIONALES
 
+var cadenaOpcional: String? = "Hola"
+print(cadenaOpcional == nil)
+
+var nombreOpcional: String? = "Homero Luzardo"
+var saludo = "¡Hola!"
+
+if let nombre = nombreOpcional {
+    print("\(saludo) \(nombre)")
+} else {
+    print("\(saludo) desconocido(a)")
+}
+
+let apodo: String? = nil
+let nombreReal:String = "Homero Enrique"
+let saludoInformal = "Bienvenido(a) \(apodo ?? nombreReal)"
+print(saludoInformal)
+
+print("")
+
+let automovil = "Tesla electrico"
+
+switch automovil {
+case "Toyota":
+    print(automovil + " es un buen auto")
+case "Ford":
+    print(automovil + " es un auto americano")
+case let x where x.contains("electrico"):
+    print("Seguro es un " + automovil)
+case "Renault":
+    print(automovil + " es un auto francés")
+default:
+    print(automovil + " no es muy conocido")
+}
