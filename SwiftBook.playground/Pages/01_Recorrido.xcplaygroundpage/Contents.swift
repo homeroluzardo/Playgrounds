@@ -160,6 +160,8 @@ print("")
 
 // FOR-IN
 
+// El simbolo _ significa que el For puede omitir las Keys del diccionario ya que solo necesitamos trabajar con los valores.
+
 let numerosInteresantes = [
     "Primos": [2, 3, 5, 7, 11, 13],
     "Fibonacci": [1, 1, 2, 3, 5, 8],
@@ -168,7 +170,7 @@ let numerosInteresantes = [
  
 var numeroMayor = 0
  
-for (_, numeros) in numerosInteresantes {
+for (keys, numeros) in numerosInteresantes {
     for numero in numeros {
         if numero > numeroMayor {
             numeroMayor = numero
@@ -177,3 +179,28 @@ for (_, numeros) in numerosInteresantes {
 }
  
 print(numeroMayor)
+print("")
+
+// WHILE
+
+var n = 2
+while n < 100 {
+    n *= 2
+}
+print(n)
+
+var m = 2
+repeat {
+    m *= 2
+} while m < 100
+print(m)
+            
+// Usa ..< para crear un rango que omita el valor superior, y usa ... para crear uno que incluya ambos valores.
+
+var total = 0
+for i in 0..<4 {
+    total += i
+}
+print(total)
+
+
